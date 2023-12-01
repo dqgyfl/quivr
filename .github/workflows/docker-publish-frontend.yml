@@ -37,6 +37,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      - name: Make copy of my_file.json 📚
+        run: "cp .frontend_env.example ./frontend/.env"
+
       # Install the cosign tool except on PR
       # https://github.com/sigstore/cosign-installer
       - name: Install cosign
